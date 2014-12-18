@@ -115,7 +115,7 @@ public class PostTest {
         }
         URLConnection urlConnection = httpPost(webServer, "/", body.toString());
         HttpURLConnection httpURLConnection = (HttpURLConnection) urlConnection;
-        assertEquals(413, httpURLConnection.getResponseCode());
+        assertEquals(500, httpURLConnection.getResponseCode());
     }
 
     @Test
